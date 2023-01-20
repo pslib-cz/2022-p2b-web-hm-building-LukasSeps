@@ -15,9 +15,33 @@
     margin-bottom: 20px;
 
 }
-.img-header{
-    max-width: 100%;
+
+.sluzby{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+    grid-auto-flow: dense;
 }
+.main-screen{
+    display: flex;
+    align-items: center;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(../MediaForBuilding/pageheader-1920w.jpg);
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 150%;
+    padding-top: 180px;
+    padding-bottom: 20px;
+    
+}
+.main-screen p{
+    color: var(--bg);
+}
+
+.main-screen h1{
+    color: var(--bg);
+}
+
 .img-rsp{
     max-width: 100%;
 }
@@ -30,6 +54,10 @@
 .body__main header{
 
 }
+
+.span{
+    color: var(--primary);
+}
 .button{
     color: var(--primary);
     font-weight: 535;
@@ -41,10 +69,40 @@
     text-align: center;
     cursor: pointer;
 }
-.main-screen h1{
-    color: var(--primary);
-}
 
 .body__header{grid-area: body-header;}
 .body__footer{grid-area: body-footer;}
 .body__main{grid-area: body-main;}
+
+.duvera{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)),url(../MediaForBuilding/background-CTAblock-4460w.jpg);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 150%;
+    padding-top: 80px;
+    padding-bottom: 20px;
+
+}
+.hug{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    height: 140px;
+}
+.hug p{
+    color: var(--bg);
+    text-align: left;
+    font-size: medium;
+    
+}
+
+.hug .button{
+    left: 0;
+    bottom:0;
+    color: var(--bg);
+    background-color: var(--primary);
+    border: none;
+}
