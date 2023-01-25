@@ -8,6 +8,8 @@ html{
  --text--gray: #888888;
 }
 
+
+
 .body__header{
  background-color: var(--bg);
 }
@@ -19,6 +21,7 @@ html{
 }
 .body__main{
     color: var(--text);
+    padding: 0 20px;
 }
 
 .main-screen{
@@ -54,12 +57,11 @@ html{
 .header-nadpis{
     margin:0px;
     font-weight: 700;
-    font-style: normal;
     font-size: 1.3em;
 }
 .header-popis{
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.86rem;
     padding-top:20px;
     margin:0px;
 }
@@ -68,13 +70,15 @@ html{
     margin-top: 80px;
     display: grid;
     grid-template-columns: 1fr;
-    padding: 0 20px;
+    grid-template-rows: 1fr;
+    grid-row: auto;
     grid-auto-flow: dense;
 }
 
 .sluzby-obsah{
     margin: 0px;
     padding-bottom: 40px;
+    font-size: 0.8rem;
 }
 
 .img-rsp{
@@ -83,13 +87,11 @@ html{
 
 .figcaption{
     font-weight: 700;
-    font-size:x-large;
+    font-size:1.1rem;
 }
 
 
-.body__main header{
-    padding:0 20px;
-}
+
 
 .span{
     color: var(--primary);
@@ -105,33 +107,32 @@ html{
     cursor: pointer;
 }
 
+
 .body__header{grid-area: body-header;}
 .body__footer{grid-area: body-footer;}
 .body__main{grid-area: body-main;}
 
 .duvera{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)),url(../MediaForBuilding/background-CTAblock-4460w.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),url(../MediaForBuilding/background-CTAblock-4460w.jpg);
     display: flex;
     align-items: center;
     flex-direction: column;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: auto 150%;
-    padding-top: 80px;
+    background-size: auto 200%;
+    padding-top: 0px;
     padding-bottom: 20px;
 
 }
 .hug{
     padding-left: 20px;
     padding-top: 20px;
-    padding-right: 20px;
-    height: 140px;
+    padding-right: 40px;
 }
 .hug p{
     color: var(--bg);
     text-align: left;
     font-size: medium;
-    
 }
 
 .hug .button{
@@ -140,4 +141,46 @@ html{
     color: var(--bg);
     background-color: var(--primary);
     border: none;
+}
+.reference__galerie{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-row: auto;
+    grid-auto-flow: dense;
+}
+
+.reference--fotek{
+    text-align: center;
+}
+
+.reference-nadpis{
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.reference > p{
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin: 0;
+    padding-top:6px;
+    padding-bottom: 5px;
+}
+
+.button-reference{
+    left: 0;
+    bottom:0;
+    color: var(--bg);
+    background-color: var(--primary);
+    border: none;   
+}
+.reference{
+    padding-bottom: 18px;
+}
+
+
+.list-onas{
+    list-style-type: circle;
 }
