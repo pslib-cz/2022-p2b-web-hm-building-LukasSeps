@@ -14,6 +14,9 @@ html{
  background-color: var(--bg);
 }
 
+
+
+
 .img-nav{
     max-width: 50%;
     margin-top: 20px;
@@ -49,7 +52,9 @@ html{
     font-size: 1.7rem;
 }
 
-
+.navbar__logo{
+    margin:30px 5px;
+}
 .body__main header{
     margin-top:50px;
 }
@@ -61,7 +66,7 @@ html{
 }
 .header-popis{
     font-weight: 400;
-    font-size: 0.86rem;
+    font-size: 0.83rem;
     padding-top:20px;
     margin:0px;
 }
@@ -81,8 +86,17 @@ html{
     font-size: 0.8rem;
 }
 
+.img-rsp__border--odd{
+    border-radius: 0px 0px 40px 0px;
+}
+
+.img-rsp__border--even{
+    border-radius: 0px 0px 0px 40px;
+}
+
 .img-rsp{
-    max-width: 100%;
+    width: 100%;
+    min-height: 134px;
 }
 
 .figcaption{
@@ -91,7 +105,15 @@ html{
 }
 
 
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    user-select: none;
 
+}
 
 .span{
     color: var(--primary);
@@ -105,6 +127,7 @@ html{
     max-width: 50%;
     text-align: center;
     cursor: pointer;
+    text-decoration: none;
 }
 
 
@@ -170,8 +193,8 @@ html{
 }
 
 .button-reference{
-    left: 0;
-    bottom:0;
+    
+    max-width: 100%;
     color: var(--bg);
     background-color: var(--primary);
     border: none;   
@@ -181,6 +204,57 @@ html{
 }
 
 
-.list-onas{
-    list-style-type: circle;
+.list__onas li::marker{
+    color: var(--primary);
+    font-size: 1.5em;  
+}
+
+
+.footer{
+    background-color: var(--primary);
+    color: var(--bg);
+    text-align: center;
+    padding-top: 66px;
+    padding-bottom: 50px;
+}
+.footer__text{
+    margin: 0px;
+    margin-bottom: 40px;
+    padding: 0px;
+}
+.footer__heading{
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding-bottom: 30px;
+    margin: 0px;
+}
+.button--footer{
+    padding: 20px 50px;
+    text-align: center;
+    background-color: var(--bg);
+    border: none;
+    
+}
+
+
+
+@media (max-width: 768px) {
+    .navbar__menu--hidden {
+        display: none;
+    }
+}
+/* hamburger menu */
+.hamburger-menu {
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.75em;
+    margin-right: 20px;
+}
+.hamburger-menu::after {
+    content: url(/MediaForBuilding/hamburger.svg);
+    
 }

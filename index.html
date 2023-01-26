@@ -17,13 +17,32 @@
 <body class="main">
     <!--navbar-->
     <header class="body__header">
-        <img class="img-nav" src="MediaForBuilding/logo.png"></img>
+            <nav class="navbar">
+                <a href="./index.html" class="navbar__logo"><img src="./MediaForBuilding/logo.png" alt="logo" width="130px"></a>
+                <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)">menu</a></div>
+                <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section_1">DOMŮ</a>
+                        <a class="nav-link" href="#section_1">DOMŮ</a>
+                    </li>
+                </menu>
+            </nav>
+        <script>
+            const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+            for (const btn of hamburgerButtons) {
+                btn.onclick = (event) => {
+                    const menus = document.querySelectorAll(".hamburger-menu-list");
+                    for (const menu of menus) {
+                        menu.classList.toggle("navbar__menu--hidden");
+                    }
+                }
+            }
+        </script>
+            <main class="main-screen">
+                <h1>HM Building.cz s.r.o.</h1>
+                <p>liberecká stavební společnost</p>
+            </main>
     </header>
-    <!--uvodni stranka-->
-    <main class="main-screen">
-        <h1>HM Building.cz s.r.o.</h1>
-        <p>liberecká stavební společnost</p>
-    </main>
     <!--Repetetivni cast stranky-->
     <main class="body__main">
         <header>
@@ -31,7 +50,7 @@
             <p class="header-popis">Ačkoliv provádíme především <b>průmyslové stavby</b>, není pro nás problém postavit Vám <b>rodinný domek na klíč</b>, nebo jen hrubou stavbu. Nejsou nám cizí ani <b>rekonstrukce budov</b> a jejich údržba a to včetně okolních ploch.</p>
         </header>
         <div class="sluzby">
-            <img class="img-rsp" src="./MediaForBuilding/sluzba-novostavby-1200w.jpg" alt="Novostavby" />
+            <img class="img-rsp img-rsp__border--odd" src="./MediaForBuilding/sluzba-novostavby-1200w.jpg" alt="Novostavby" />
             <figure class="sluzby-obsah">
                 <p class="figcaption">Novostavby</p>
                 <p>Dle požadavků investora jsme schopní dodat <b>kompletní stavbu na klíč</b>, případně zhotovit ucelenou část. Jsme schopni zajistit také projektovou dokumentaci.</p>
@@ -39,21 +58,21 @@
                 <div href="https://www.seznam.cz/" class="button">Zobrazit více</div>
             </figure>
             
-            <img class="img-rsp" src="./MediaForBuilding/sluzba-prumyslove-stavby-1920w.jpg" alt="Prumyslove stavby" />
+            <img class="img-rsp img-rsp__border--even" src="./MediaForBuilding/sluzba-prumyslove-stavby-1920w.jpg" alt="Prumyslove stavby" />
             <figure class="sluzby-obsah">
                 <p class="figcaption">Průmyslove stavby</p>
                 <p>Realizujeme <b>průmyslové objekty ocelové konstrukce</b>, lehké ocelové (stanového typu), z prefabrikovaných dílců atd. Vzhledem k tomu, že vlastníme dostatek vlastní mechanizace, stáváme se nezávislými na ostatních subdodávkách a tím se <b>dostáváme na přijatelné ceny</b>.</p>
                 <div href="https://www.seznam.cz/" class="button">Zobrazit více</div>
             </figure>
 
-            <img class="img-rsp" src="./MediaForBuilding/sluzba-rekonstrukce-1920w.jpg" alt="Rekonstrukce" />
+            <img class="img-rsp img-rsp__border--odd" src="./MediaForBuilding/sluzba-rekonstrukce-1920w.jpg" alt="Rekonstrukce" />
             <figure class="sluzby-obsah">
                 <p class="figcaption">Rekonstrukce domů a jiných staveb</p>
                 <p>Provádíme veškeré práce spojené s <b>rekonstrukcí stávajících objektů</b>. Pro naše klienty zajišťujeme dodatečné izolování objektů, <b>zateplení objektů</b>, změnu vnitřních i vnějších dispozic stávajících objektů a demolice stávajících staveb. </p>
                 <div href="https://www.seznam.cz/" class="button">Zobrazit více</div>
             </figure>
 
-            <img class="img-rsp" src="./MediaForBuilding/sluzba-komunikace-a-zpevnene-plochy-1200w.jpg" alt="Komunikace a zpevnene plochy" />
+            <img class="img-rsp img-rsp__border--even" src="./MediaForBuilding/sluzba-komunikace-a-zpevnene-plochy-1200w.jpg" alt="Komunikace a zpevnene plochy" />
             <figure class="sluzby-obsah">
                 <p class="figcaption">Komunikace a zpevněné plochy</p>
                 <p>Komunikace a zpevněné plochy provádíme včetně <b>zemních prací, konstrukcí podkladních</b> a souvisejících objektů, jako jsou <b>odvodnění, zpevnění svahů, opěrné zdi</b> atd.</p>
@@ -69,7 +88,7 @@
                 <div href="https://www.seznam.cz/" class="button">Přesvědčit se</div>
             </div>  
         </main>
-    <main class="body__main"
+    <main class="body__main">
         <div class="reference">
             <header>
                 <h1 class="header-nadpis">Rádi vám ukážeme naše <span class="span">reference</span></h1>
@@ -95,5 +114,10 @@
             </div>
         </div>
     </main>
+    <footer class="footer">
+        <h1 class="footer__heading">Plácneme si pro Váš projekt?</h1>
+        <p class="footer__text">Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+        <p><a href="https://www.seznam.cz/" class="button button--footer">Nezávazně se poptat<a></p>
+    </footer>
 </body>
 </html>
