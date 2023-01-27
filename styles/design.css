@@ -86,6 +86,10 @@ html{
     font-size: 0.8rem;
 }
 
+.text__sluzby-obsah{
+    padding-bottom: 18px;
+}
+
 .img-rsp__border--odd{
     border-radius: 0px 0px 40px 0px;
 }
@@ -97,6 +101,8 @@ html{
 .img-rsp{
     width: 100%;
     min-height: 134px;
+    max-height: 40vw;
+    overflow: hidden;
 }
 
 .figcaption{
@@ -123,7 +129,7 @@ html{
     font-weight: 535;
     border-style: dashed;
     border-width: 1px;
-    padding: 10px 15px 10px 15px;
+    padding: 12px 40px;
     max-width: 50%;
     text-align: center;
     cursor: pointer;
@@ -147,18 +153,23 @@ html{
     padding-bottom: 20px;
 
 }
-.hug{
+.hug--duvera{
     padding-left: 20px;
     padding-top: 20px;
     padding-right: 40px;
 }
-.hug p{
+.hug--duvera p{
     color: var(--bg);
     text-align: left;
     font-size: medium;
+    margin-bottom:10px;
 }
 
-.hug .button{
+.hug--duvera__text{
+    padding-bottom: 10px;
+}
+
+.hug--duvera .button{
     left: 0;
     bottom:0;
     color: var(--bg);
