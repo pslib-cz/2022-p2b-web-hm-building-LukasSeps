@@ -16,13 +16,33 @@
     </head>
     <body>
         <header class="body__header">
-            <img class="img-nav" src="MediaForBuilding/logo.png"></img>
-        </header>
+            <nav class="navbar">
+                <a href="./index.html" class="navbar__logo"><img src="./MediaForBuilding/logo.png" alt="logo" width="130px"></a>
+                <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)">menu</a></div>
+                <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section_1">DOMŮ</a>
+                        <a class="nav-link" href="#section_1">DOMŮ</a>
+                    </li>
+                </menu>
+            </nav>
+        <script>
+            const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+            for (const btn of hamburgerButtons) {
+                btn.onclick = (event) => {
+                    const menus = document.querySelectorAll(".hamburger-menu-list");
+                    for (const menu of menus) {
+                        menu.classList.toggle("navbar__menu--hidden");
+                    }
+                }
+            }
+        </script>
+    </header>
         <main class="body__main">
             <div class="reference">
-                    <h1 class="header-nadpis">O nás</h1>
-                    <p class="header-popis">Společnost <b>HM Building.cz s.r.o.</b> nabízí své <b>služby ve stavebnictví od roku 2015</b>, a to převážně <b>po Libereckém kraji.</b></p>
-                    <p class="header-popis">V oboru pozemního stavitelství <b>provádíme stavbu a rekonstrukci</b>:</p>   
+                    <h1 class="header-add__nadpis">O nás</h1>
+                    <p>Společnost <b>HM Building.cz s.r.o.</b> nabízí své <b>služby ve stavebnictví od roku 2015</b>, a to převážně <b>po Libereckém kraji.</b></p>
+                    <p>V oboru pozemního stavitelství <b>provádíme stavbu a rekonstrukci</b>:</p>   
                 <ul class="list__onas">
                     <li>průmyslových staveb</li>
                     <li>obytných staveb</li>

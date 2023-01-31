@@ -14,7 +14,13 @@ html{
  background-color: var(--bg);
 }
 
-
+.header-add__nadpis{
+    margin:0px;
+    font-weight: 700;
+    font-size: 1.8em;
+    padding-top: 111px;
+    padding-bottom: 11px;
+}
 
 
 .img-nav{
@@ -43,6 +49,36 @@ html{
     margin-bottom: 5px;
     margin-top: 0px;
     font-weight: 300;
+}
+
+menu{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    background-color: var(--primary);
+
+}
+
+menu::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    margin-right:calc(46px -25px - (46px - (25px /2))) ;
+    transform: translateY(-100%);
+    border:12.5px solid var(--bg);
+    border-bottom-color: var(--primary);
+    border-bottom-style:solid;
+    border-bottom-width:25px ;
+    border-top: none;
+    
+
 }
 
 .main-screen h1{
@@ -101,7 +137,7 @@ html{
 .img-rsp{
     width: 100%;
     min-height: 134px;
-    max-height: 40vw;
+    /*max-height: 40vw;*/
     overflow: hidden;
 }
 
@@ -203,12 +239,16 @@ html{
     padding-bottom: 5px;
 }
 
-.button-reference{
-    
+.button--reference{
     max-width: 100%;
     color: var(--bg);
     background-color: var(--primary);
-    border: none;   
+    border: none; 
+
+}
+
+.center-button--reference{
+    text-align: center;
 }
 .reference{
     padding-bottom: 18px;
@@ -267,5 +307,10 @@ html{
 }
 .hamburger-menu::after {
     content: url(/MediaForBuilding/hamburger.svg);
+    
+}
+
+
+@media (min-width: 1920px){
     
 }
