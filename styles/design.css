@@ -10,7 +10,6 @@ html{
 }
 
 
-
 .body__header{
  background-color: var(--bg);
 }
@@ -328,7 +327,7 @@ menu::after {
     margin-right: 20px;
 }
 .hamburger-menu::after {
-    content: url(/MediaForBuilding/hamburger.svg);
+    content: url(../MediaForBuilding/hamburger.svg);
     
 }
 
