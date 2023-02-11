@@ -18,7 +18,7 @@ html{
     margin:0px;
     font-weight: 700;
     font-size: 1.8em;
-    padding-top: 111px;
+    padding-top: 40px;
     padding-bottom: 11px;
 }
 
@@ -95,6 +95,10 @@ menu::after {
     margin-top:50px;
 }
 
+.body__main h2{
+    font-size:1.2rem;
+}
+
 .header-nadpis{
     margin:0px;
     font-weight: 700;
@@ -128,10 +132,12 @@ menu::after {
 
 .img-rsp__border--odd{
     border-radius: 0px 0px 40px 0px;
+
 }
 
 .img-rsp__border--even{
     border-radius: 0px 0px 0px 40px;
+    
 }
 
 .img-rsp{
@@ -144,7 +150,10 @@ menu::after {
 .figcaption{
     font-weight: 700;
     font-size:1.1rem;
+    text-transform: uppercase;
 }
+
+
 
 
 .navbar{
@@ -162,7 +171,7 @@ menu::after {
 }
 .button{
     color: var(--primary);
-    font-weight: 535;
+    font-weight: 500;
     border-style: dashed;
     border-width: 1px;
     padding: 12px 40px;
@@ -198,6 +207,7 @@ menu::after {
     padding-bottom: 20px;
 
 }
+
 .hug--duvera{
     padding-left: 20px;
     padding-top: 20px;
@@ -275,6 +285,7 @@ menu::after {
     text-decoration: none;
     color: var(--text--gray);
     font-size: 0.8rem;
+    text-transform: uppercase;
 }
 
 .footer{
@@ -412,11 +423,7 @@ menu::after {
         padding-right: 100px;
         background-size: cover;
         background-position: center center;
-        max-height: 440px;
-        min-height: 170px;
         padding: 5%;
-        display: flex;
-        flex-direction: column;
         
     }
     .hug--duvera{
@@ -432,5 +439,8 @@ menu::after {
     }
     .button--main-screen{
         display: unset;
+    }
+    .img-rsp__border--even{
+        grid-column-start: 2 ;
     }
 }
