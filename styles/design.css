@@ -15,7 +15,7 @@ html{
 }
 
 .header-add__nadpis{
-    margin:0px;
+    margin:0em;
     font-weight: 700;
     font-size: 1.8em;
     padding-top: 40px;
@@ -25,12 +25,12 @@ html{
 
 .img-nav{
     max-width: 50%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
 }
 .body__main{
     color: var(--text);
-    padding: 0 20px;
+    padding: 0 1.25em;
 }
 
 .main-screen{
@@ -41,13 +41,13 @@ html{
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto 150%;
-    padding-top: 160px;
-    padding-bottom: 20px;
+    padding-top: 10em;
+    padding-bottom: 1.25em;
 }
 .main-screen p{
     color: var(--bg);
-    margin-bottom: 5px;
-    margin-top: 0px;
+    margin-bottom: 0.3125em;
+    margin-top: 0em;
     font-weight: 300;
 }
 
@@ -83,16 +83,16 @@ menu::after {
 
 .main-screen h1{
     color: var(--bg);
-    margin-bottom: 5px;
+    margin-bottom: 0.3125em;
     font-weight: 800;
     font-size: 1.7rem;
 }
 
 .navbar__logo{
-    margin:30px 5px;
+    margin:1.875em 0.3125em;
 }
 .body__main header{
-    margin-top:50px;
+    margin-top:3.125em;
 }
 
 .body__main h2{
@@ -100,19 +100,19 @@ menu::after {
 }
 
 .header-nadpis{
-    margin:0px;
+    margin:0em;
     font-weight: 700;
     font-size: 1.3em;
 }
 .header-popis{
     font-weight: 400;
     font-size: 0.83rem;
-    padding-top:20px;
-    margin:0px;
+    padding-top:1.25em;
+    margin:0em;
 }
 
 .sluzby{
-    margin-top: 80px;
+    margin-top: 5em;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -121,22 +121,22 @@ menu::after {
 }
 
 .sluzby-obsah{
-    margin: 0px;
-    padding-bottom: 40px;
+    margin: 0em;
+    padding-bottom: 2.5em;
     font-size: 0.8rem;
 }
 
 .text__sluzby-obsah{
-    padding-bottom: 18px;
+    padding-bottom: 1.125em;
 }
 
 .img-rsp__border--odd{
-    border-radius: 0px 0px 40px 0px;
+    border-radius: 0em 0em 2.5em 0em;
 
 }
 
 .img-rsp__border--even{
-    border-radius: 0px 0px 0px 40px;
+    border-radius: 0em 0em 0em 2.5em;
     
 }
 
@@ -217,11 +217,11 @@ menu::after {
     color: var(--bg);
     text-align: left;
     font-size: medium;
-    margin-bottom:10px;
+    margin-bottom:0.625em;
 }
 
 .hug--duvera__text{
-    padding-bottom: 10px;
+    padding-bottom: 0.625em;
 }
 
 .hug--duvera .button{
@@ -232,12 +232,13 @@ menu::after {
     border: none;
 }
 .reference__galerie{
-    margin-top: 80px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-row: auto;
-    grid-auto-flow: dense;
+    margin-top: 5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+
 }
 
 .reference--fotek{
@@ -247,15 +248,15 @@ menu::after {
 .reference-nadpis{
     font-weight: 700;
     font-size: 1.2rem;
-    margin: 0;
+    margin: 0em;
 }
 
 .reference > p{
     font-weight: 400;
     font-size: 0.9rem;
     margin: 0;
-    padding-top:6px;
-    padding-bottom: 5px;
+    padding-top:0.375em;
+    padding-bottom: 0.3125em;
 }
 
 .button--reference{
@@ -266,11 +267,16 @@ menu::after {
 
 }
 
+.reference__item{
+    max-width: 320px;
+}
+
 .center-button--reference{
     text-align: center;
 }
 .reference{
-    padding-bottom: 18px;
+    padding: 1.25em;
+    
 }
 
 
@@ -292,22 +298,22 @@ menu::after {
     background-color: var(--primary);
     color: var(--bg);
     text-align: center;
-    padding-top: 66px;
-    padding-bottom: 50px;
+    padding-top: 4.125em;
+    padding-bottom: 3.125em;
 }
 .footer__text{
-    margin: 0px;
-    margin-bottom: 40px;
-    padding: 0px;
+    margin: 0em;
+    margin-bottom: 2.5em;
+    padding: 0em;
 }
 .footer__heading{
     font-size: 1.3rem;
     font-weight: 700;
-    padding-bottom: 30px;
-    margin: 0px;
+    padding-bottom: 1.875em;
+    margin: 0em;
 }
 .button--footer{
-    padding: 20px 50px;
+    padding: 1.25em 3.125em;
     text-align: center;
     background-color: var(--bg);
     border: none;
@@ -335,7 +341,7 @@ menu::after {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 0.75em;
-    margin-right: 20px;
+    margin-right: 1.25em;
 }
 .hamburger-menu::after {
     content: url(../MediaForBuilding/hamburger.svg);
@@ -366,14 +372,14 @@ menu::after {
         position: static;
         background-color: #ffffff;
         width: 50%;
-        padding: 0;
-        margin: 0;
+        padding: 0em;
+        margin: 0em;
         display: flex;
         align-items: center;
         justify-content: flex-end;
         flex-direction: row;
         gap: 20px;
-        padding-right: 20px;
+        padding-right: 1.25em;
         height: 100%;
 
     
@@ -397,18 +403,18 @@ menu::after {
     }
     .main-screen p{
         font-size: 1.5em;
-        padding-bottom: 20px;
+        padding-bottom: 1.25em;
     }
 
     .body__main header{
-        margin-top:50px;
-        margin: 16px auto;
+        margin-top:3.125em;
+        margin: 1em auto;
         width: 65%;
         text-align: center;
     }
 
     .body__main{
-        margin:100px 100px 0px;
+        margin:6.25em 6.25em 0em;
     }
 
     .sluzby{
@@ -418,24 +424,24 @@ menu::after {
         align-items: center;
     }
     .duvera{
-        margin-top: 100px;
-        padding-left: 100px;
-        padding-right: 100px;
+        margin-top: 6.25em;
+        padding-left: 6.25em;
+        padding-right: 6.25em;
         background-size: cover;
         background-position: center center;
         padding: 5%;
         
     }
     .hug--duvera{
-        padding-left: 0px;
-        padding-top: 20px;
-        padding-right: 40px;
+        padding-left: 0em;
+        padding-top: 1.25em;
+        padding-right: 2.5em;
     }
     .hug--duvera p{
         color: var(--bg);
         text-align: left;
         font-size: 1.2em;
-        margin-bottom:10px;
+        margin-bottom:0.625em;
     }
     .button--main-screen{
         display: unset;
